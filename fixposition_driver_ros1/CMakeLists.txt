@@ -5,7 +5,7 @@ project(fixposition_driver_ros1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -Werror\
-    -Wshadow -Wunused-parameter -Wformat -Wpointer-arith -Woverloaded-virtual")
+  -Wshadow -Wunused-parameter -Wformat -Wpointer-arith -Woverloaded-virtual -Wno-narrowing")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 if(NOT CMAKE_BUILD_TYPE)
