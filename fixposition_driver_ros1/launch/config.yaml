@@ -47,10 +47,10 @@ messages:
     ##### GNSS only position
     - "NOV_B-BESTGNSSPOS"      # This can be one or both of the _GNSS1 and _GNSS2 variants
 
-# Driver behaviour
-fusion_epoch: true     # Enable fusion epoch output
-nmea_epoch:   "GNSS"   # Choice for NMEA collection, must match NMEA message configuration type (<epoch> above), "" to disable
-raw_output:   false    # Enable raw messages output
+# Driver behaiour
+fusion_epoch: false     # Enable fusion epoch output
+nmea_epoch:   ""   # Choice for NMEA collection, must match NMEA message configuration type (<epoch> above), "" to disable
+raw_output:   true    # Enable raw messages output
 cov_warning:  false    # Enable covariance warnings
 nav2_mode:    false    # Enable nav2 mode
 
@@ -64,5 +64,5 @@ converter:
     use_z: false               # Transmit the z axis of the input velocity
 
 output_ns:   "/fixposition"              # Namespace for output topics, leave empty to use node namespace
-speed_topic: "/fixposition/speed"        # Wheelspeed input, empty to disable
-corr_topic:  "/rtcm"                     # Correction data input, empty to disable
+speed_topic: ""        # Wheelspeed input, empty to disable
+corr_topic:  ""                     # Correction data input, empty to disable
