@@ -52,7 +52,7 @@ fusion_epoch: false     # Enable fusion epoch output
 nmea_epoch:   ""   # Choice for NMEA collection, must match NMEA message configuration type (<epoch> above), "" to disable
 raw_output:   true    # Enable raw messages output
 cov_warning:  false    # Enable covariance warnings
-nav2_mode:    false    # Enable nav2 mode
+nav2_mode:    true # Enable nav2 mode
 
 converter:
     enabled: false
